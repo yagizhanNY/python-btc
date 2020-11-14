@@ -11,7 +11,7 @@ def send_mail(value, change_percent):
     username = "***"
     password = "***"
     subject = "Subject: Guncel BTC Degeri Hakkinda"
-    body = "BTC guncel degeri: {}TL\nDegisim Yuzdesi: {}".format(value, change_percent)
+    body = "BTC guncel degeri: {}TL\nDegisim Yuzdesi: {}".format(str(value), str(change_percent))
 
     message = MIMEText(body)
     message['Subject'] = subject
